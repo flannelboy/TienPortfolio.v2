@@ -17,8 +17,9 @@
 </head>
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand-md navbar-dark">
-            <a href="#" class="navbar-brand"></a>
+
+            <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style="backdrop-filter: blur(5px); ">
+                <a href="#" class="navbar-brand" style="font-family:'Chivo Mono',monospace;">Tien Le</a>
                 <button class="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
@@ -29,28 +30,68 @@
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="collapse navbar-collapse" id="toggleMobileMenu">
-                <ul class="navbar-nav ms-auto text-center">
-                    <li>
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                    <ul class="navbar-nav ms-auto text-end">
+                        <li>
+                            <a class="nav-link" href="#home" style="font-family:'Chivo Mono',monospace;">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#projects" style="font-family:'Chivo Mono',monospace;">Projects</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#contact" style="font-family:'Chivo Mono',monospace;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
         <div id="home" class="home">
-            <h1 style="font-family: 'Yellowtail', cursive; font-size: 15vw;  text-align: center;" >Tien Le</h1>
+            <h1 style="font-family: 'Yellowtail', cursive; font-size: 15vw;  text-align: center;">Tien Le</h1>
             <h2 style=" font-family: 'Chivo Mono',monospace; font-size: 3vw; text-align: center;">Full Stack Developer & Computer Science student</h2>
         </div>
-        <div id="projects" class="projects-container">
 
+        <!--
+
+        <div id="projects" class="projects-container">
+            <div class="software">
+                <h1 style="font-family: 'Chivo Mono',monospace; font-size: 3vw;">Software Developments</h1>
+            </div>
+            <div class="raspberry">
+                <h1 style="font-family: 'Chivo Mono',monospace; font-size: 3vw;">Raspberry Pi Developments </h1>
+            </div>
         </div>
 
+        -->
+
+        <div id="contact" class="contact-container">
+            <nav class="navbar navbar-expand-sm navbar-dark" style="backdrop-filter: blur(5px); ">
+                <a href="#" class="navbar-brand" style="font-family:'Chivo Mono',monospace;">Let's Connect!</a>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#toggleMobileMenu2"
+                        aria-controls="toggleMobileMenu2"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation";
+
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="toggleMobileMenu2">
+                    <ul class="navbar-nav ms-auto text-end">
+                        <li>
+                            <a class="nav-link" href="linkedin.com/in/tiendungdle" style="font-family:'Chivo Mono',monospace;">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="https://github.com/flannelboy" style="font-family:'Chivo Mono',monospace;">GitHub</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </div>
 
     <script src="js/bootstrap.js"></script>
