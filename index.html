@@ -16,10 +16,19 @@
     <link rel="stylesheet" href="css/styling.css">
 </head>
 <body>
+    <script src="js/bootstrap.js"></script>
     <div class="container">
 
             <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style="backdrop-filter: blur(5px); ">
-                <a href="#" class="navbar-brand" style="font-family:'Chivo Mono',monospace;">Tien Le</a>
+                <a href="#" class="navbar-brand" style="font-family:'Chivo Mono',monospace;">
+                    <!-- Uncomment when logo is done, as well as replace header logo
+                    <span class="hidden">
+                        Tien Le
+                    </span>
+                    <img src="media/mountain.jpg" alt="Tien Le logo" height="30" width="30" class="d-inline-block align-top">
+                    -->
+                    Tien Le
+                </a>
                 <button class="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
@@ -48,52 +57,55 @@
 
         <div id="home" class="home">
             <h1 style="font-family: 'Yellowtail', cursive; font-size: 15vw;  text-align: center;">Tien Le</h1>
-            <h2 style=" font-family: 'Chivo Mono',monospace; font-size: 3vw; text-align: center;">Full Stack Developer & Computer Science student</h2>
+            <h2 style="font-size: 3vw; text-align: center;">Full Stack Developer & Computer Science student</h2>
         </div>
-
-        <!--
-
+        <!-- Display this while project page still in-progress -->
+        <p class="text-center" style="ont-size: 3vw;">&#60; Projects are being added, comeback another time! &#62;</p>
+        <!-- After finishing any work on projects, add display: none; in projects-container css -->
         <div id="projects" class="projects-container">
             <div class="software">
-                <h1 style="font-family: 'Chivo Mono',monospace; font-size: 3vw;">Software Developments</h1>
+                <h1 style=" font-size: 3vw;">Software Developments</h1>
+                <h2 style=" font-size: 3vw;"></h2>
+
             </div>
             <div class="raspberry">
-                <h1 style="font-family: 'Chivo Mono',monospace; font-size: 3vw;">Raspberry Pi Developments </h1>
+                <h1 style=" font-size: 3vw;">Raspberry Pi Developments </h1>
             </div>
         </div>
 
-        -->
-
+        <figure class="start">
+            <blockquote class="blockquote">
+                <p>"When I die, I want to be remembered for the life I lived, not the money I made."</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                <cite title="Source Title">Avicii</cite>
+            </figcaption>
+        </figure>
         <div id="contact" class="contact-container">
             <nav class="navbar navbar-expand-sm navbar-dark" style="backdrop-filter: blur(5px); ">
-                <a href="#" class="navbar-brand" style="font-family:'Chivo Mono',monospace;">Let's Connect!</a>
+                <a href="#" class="navbar-brand">Let's Connect!</a>
                 <button class="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#toggleMobileMenu2"
                         aria-controls="toggleMobileMenu2"
                         aria-expanded="false"
-                        aria-label="Toggle navigation";
-
+                        aria-label="Toggle navigation"
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="toggleMobileMenu2">
                     <ul class="navbar-nav ms-auto text-end">
                         <li>
-                            <a class="nav-link" href="linkedin.com/in/tiendungdle" style="font-family:'Chivo Mono',monospace;">LinkedIn</a>
+                            <a class="nav-link" href="https://www.linkedin.com/in/tiendungdle/" target="_blank">LinkedIn</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="https://github.com/flannelboy" style="font-family:'Chivo Mono',monospace;">GitHub</a>
+                            <a class="nav-link" href="https://github.com/flannelboy" target="_blank" >GitHub</a>
                         </li>
-
-
                     </ul>
                 </div>
             </nav>
         </div>
     </div>
-
-    <script src="js/bootstrap.js"></script>
 </body>
 </html>
