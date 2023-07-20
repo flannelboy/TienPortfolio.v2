@@ -3,10 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="media/logoBody.png" type="image/png">
     <title>Tien Le</title>
     <!--<link rel="icon" href="path/to/favicon.ico" type="image/x-icon"> Fonts -->
-
-
     <meta name="author" content="Tien Dung Le">
     <!-- Fonts -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Chivo Mono">
@@ -17,9 +16,12 @@
 </head>
 <body>
     <script src="js/bootstrap.js"></script>
+    <div class="background-overlay"></div>
     <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="backdrop-filter: blur(5px); ">
-                <a href="#" class="navbar-brand" style="font-family:'Chivo Mono',monospace;">Tien Le</a>
+                <a href="#" class="navbar-brand" style="font-family:'Chivo Mono',monospace;">
+                    <img src="media/logoBody.png" alt="Logo" style="height: 50px; width: 50px;">
+                </a>
                 <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
                         type="button"
                         data-bs-toggle="collapse"
@@ -55,7 +57,7 @@
         </div>
 
         <!-- Display this while project page still in-progress -->
-        <p class="text-center" style="font-size: 1.7vw; height: 20vh">&#60;site in progress&#62;</p>
+        <p  class="text-center py-3" style="font-size: 1.7vw; height: 20vh">&#60;site in progress&#62;</p>
         <!-- After finishing any work on projects, add display: none; in projects-container css -->
         <div id="projects" class="projects-container d-none">
             <div class="software">
@@ -77,22 +79,20 @@
                 </figcaption>
             </figure>
         </div>
-
-
-
     </div>
-    <div id="contact" class="container d-flex justify-content-between align-items-center" style="height: 20vh;">
-        <h3 class=" text-light">Let's connect!</h3>
-        <ul class="list-unstyled text-dark">
-            <li class="d-inline-flex">
-                <a href="https://www.linkedin.com/in/tiendungdle/" class="text-light" target="_blank">LinkedIn</a>
-            </li>
-            <li class="d-inline-flex">
-                <a class="text-light" href="https://github.com/flannelboy" target="_blank">GitHub</a>
-            </li>
-        </ul>
-    </div>
-    <div class="container-fluid"  style="backdrop-filter: blur(10px);">
+
+    <div class="container-fluid" style="backdrop-filter: blur(10px);">
+        <div id="contact" class="container d-flex justify-content-between align-items-center" style="font-size: 3vw">
+            <h3 class="text-light" >Let's connect!</h3>
+            <ul class="list-unstyled text-dark">
+                <li class="d-inline-flex">
+                    <a href="https://www.linkedin.com/in/tiendungdle/" class="text-decoration-none text-light" target="_blank">LinkedIn</a>
+                </li>
+                <li class="d-inline-flex ">
+                    <a href="https://github.com/flannelboy" class="text-decoration-none text-light" target="_blank">GitHub</a>
+                </li>
+            </ul>
+        </div>
         <footer class="text-center py-3">
             <div>
                 <p>&copy; 2023 Tien Le. All rights reserved.</p>
