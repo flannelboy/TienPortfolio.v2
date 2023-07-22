@@ -96,3 +96,24 @@ body {
 .navbar-toggler.collapsed .toggler-icon{
     background: linear-gradient(263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100%);
 }
+.arrow-wrapper {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    animation: bounce 3s infinite;
+    padding-top: 10%;
+
+}
+
+.arrow {
+    font-size: 30px;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

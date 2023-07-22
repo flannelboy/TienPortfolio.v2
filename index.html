@@ -16,6 +16,7 @@
 </head>
 <body>
     <script src="js/bootstrap.js"></script>
+    <script src="js/js.js"></script>
     <div class="background-overlay"></div>
     <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="backdrop-filter: blur(5px); ">
@@ -49,28 +50,32 @@
                     </ul>
                 </div>
             </nav>
-
-
         <div id="home" class="home">
             <h1 style="font-family: 'Yellowtail', cursive; font-size: 20vw;  text-align: center;">Tien Le</h1>
             <h2 style="font-size: 3vw; text-align: center;">Full Stack Developer & Computer Science student</h2>
-        </div>
-
-        <!-- Display this while project page still in-progress -->
-        <p  class="text-center py-3" style="font-size: 1.7vw; height: 20vh">&#60;site in progress&#62;</p>
-        <!-- After finishing any work on projects, add display: none; in projects-container css -->
-        <div id="projects" class="projects-container d-none">
-            <div class="software">
-                <h1 style="font-size: 3vw;">Software Developments</h1>
-                <h2 style="font-size: 3vw;"></h2>
-
-            </div>
-            <div class="raspberry">
-                <h1 style=" font-size: 3vw;">Raspberry Pi Developments </h1>
+            <div class="arrow-wrapper">
+                <div class="arrow">&#8595;</div>
             </div>
         </div>
-        <div style="height: 20vh">
-            <figure class="text-center">
+        <div class="container align-items-center d-flex justify-content-center flex-column text-center" style="height: 50vh;">
+            <!-- Display this while project page still in-progress -->
+            <p class="text-center">&#60;site in progress&#62;</p>
+
+
+            <!-- After finishing any work on projects, add d-none; in projects-container class -->
+            <div id="projects" class="projects-container d-none">
+                <div class="software">
+                    <h1 style="font-size: 3vw;">Software Developments</h1>
+                    <h2 style="font-size: 3vw;"></h2>
+                </div>
+                <div class="raspberry">
+                    <h1 style=" font-size: 3vw;">Raspberry Pi Developments </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="align-items-center d-flex justify-content-center flex-column text-center" style="height: 100vh;">
+            <figure >
                 <blockquote class="blockquote">
                     <p>"When I die, I want to be remembered for the life I lived, not the money I made."</p>
                 </blockquote>
@@ -82,21 +87,20 @@
     </div>
 
     <div class="container-fluid" style="backdrop-filter: blur(10px);">
-        <div id="contact" class="container d-flex justify-content-between align-items-center" style="font-size: 3vw">
-            <h3 class="text-light" >Let's connect!</h3>
-            <ul class="list-unstyled text-dark">
+        <div id="contact" class="container d-flex justify-content-between align-items-center">
+            <p class="text-1">Let's connect!</p>
+            <ul class="list-unstyled">
                 <li class="d-inline-flex">
                     <a href="https://www.linkedin.com/in/tiendungdle/" class="text-decoration-none text-light" target="_blank">LinkedIn</a>
                 </li>
                 <li class="d-inline-flex ">
-                    <a href="https://github.com/flannelboy" class="text-decoration-none text-light" target="_blank">GitHub</a>
+                    <a href="https://github.com/flannelboy" class=" text-decoration-none text-light" target="_blank">GitHub</a>
                 </li>
             </ul>
         </div>
         <footer class="text-center py-3">
             <div>
                 <p>&copy; 2023 Tien Le. All rights reserved.</p>
-                <p>This website and its content are protected by copyright law.</p>
             </div>
         </footer>
     </div>
