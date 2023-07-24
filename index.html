@@ -13,10 +13,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styling.css">
+    <!--suppress JSUnresolvedLibraryURL -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/js.js"></script>
+
     <div class="background-overlay"></div>
     <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="backdrop-filter: blur(5px); ">
@@ -42,7 +44,7 @@
                             <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#projects">Projects</a>
+                            <a class="nav-link" href="#project">Projects</a>
                         </li>
                         <li>
                             <a class="nav-link" href="#contact">Contact</a>
@@ -50,32 +52,55 @@
                     </ul>
                 </div>
             </nav>
-        <div id="home" class="home">
-            <h1 style="font-family: 'Yellowtail', cursive; font-size: 20vw;  text-align: center;">Tien Le</h1>
-            <h2 style="font-size: 3vw; text-align: center;">Full Stack Developer & Computer Science student</h2>
-            <div class="arrow-wrapper">
+        <div id="home" class="container text-center flex-column d-flex justify-content-center align-items-center" style="height: 100vh;">
+            <h1 style="font-family: 'Yellowtail', cursive; font-size: 20vw;" data-aos="fade-up">Tien Le</h1>
+            <h2 style="font-size: 3vw;" data-aos="fade-up">Full Stack Developer & Computer Science student</h2>
+            <div class="arrow-wrapper justify-content-center">
                 <div class="arrow">&#8595;</div>
             </div>
         </div>
-        <div class="container align-items-center d-flex justify-content-center flex-column text-center" style="height: 50vh;">
+        <p class="text-center d-none">&#60;site in progress&#62;</p>
+
+        <div id="project" class="container flex-md-column" style="height: 100vh; ">
             <!-- Display this while project page still in-progress -->
-            <p class="text-center">&#60;site in progress&#62;</p>
-
-
             <!-- After finishing any work on projects, add d-none; in projects-container class -->
-            <div id="projects" class="projects-container d-none">
-                <div class="software">
-                    <h1 style="font-size: 3vw;">Software Developments</h1>
-                    <h2 style="font-size: 3vw;"></h2>
+            <div id="software">
+                <div class="container-fluid text-center" data-aos="fade-up">
+                    <p>Software Developments</p>
                 </div>
-                <div class="raspberry">
-                    <h1 style=" font-size: 3vw;">Raspberry Pi Developments </h1>
+                <div class="container-fluid text-start" data-aos="fade-up">
+                    <p>tienl.dev Portfolio</p>
+                    <p>HTML | CSS | BOOTSTRAP | JAVASCRIPT | HTTPS PROTOCOL | CNAME | DNS | GITHUB | GIT</p>
+                </div>
+                <div class="container-fluid text-start" data-aos="fade-up">
+                    <p>Inventory Management system</p>
+                    <p>JAVA | JSON | GIT | GITHUB</p>
+                </div>
+                <div class="container-fluid text-start" data-aos="fade-up">
+                    <p>Banking system (Backend and Frontend Separately)</p>
+                    <p>C# | TYPESCRIPT | XML | HTML | CSS | GIT | GITHUB | AGILE</p>
+                </div>
+            </div>
+            <div id="raspberry">
+                <div class="container-fluid text-center" data-aos="fade-up">
+                    <p>Raspberry Developments</p>
+                </div>
+                <div class="container-fluid text-start" data-aos="fade-up">
+                    <p>Security Motion Doorbell</p>
+                    <p>Raspberry Pi 4B | C | GDB/GNU Debugger</p>
+                </div>
+                <div class="container-fluid text-start" data-aos="fade-up">
+                    <p>Ultrasonic Range Finder</p>
+                    <p>Raspberry Pi 4B | C | GDB/GNU Debugger</p>
+                </div>
+                <div class="container-fluid text-start" data-aos="fade-up">
+                    <p>Wireless Local Area Network Chat Console</p>
+                    <p>Raspberry Pi 4B | C | GDB/GNU Debugger</p>
                 </div>
             </div>
         </div>
-
         <div class="align-items-center d-flex justify-content-center flex-column text-center" style="height: 100vh;">
-            <figure >
+            <figure data-aos="fade-left">
                 <blockquote class="blockquote">
                     <p>"When I die, I want to be remembered for the life I lived, not the money I made."</p>
                 </blockquote>
@@ -86,7 +111,7 @@
         </div>
     </div>
 
-    <div class="container-fluid" style="backdrop-filter: blur(10px);">
+    <div class="container-fluid" style="backdrop-filter: blur(10px);" >
         <div id="contact" class="container d-flex justify-content-between align-items-center">
             <p class="text-1">Let's connect!</p>
             <ul class="list-unstyled">
@@ -104,6 +129,13 @@
             </div>
         </footer>
     </div>
-
+    <script src="js/bootstrap.js"></script>
+    <script src="js/js.js"></script>
+    <!--suppress JSUnresolvedLibraryURL -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // noinspection JSUnresolvedReference
+        AOS.init();
+    </script>
 </body>
 </html>
