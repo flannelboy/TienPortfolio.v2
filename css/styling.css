@@ -108,7 +108,16 @@ body {
     border: 2px solid white;
     background-color: #121212;
     height: auto;
-    width: auto;
+    width: fit-content;
+    padding: 15px;
+    margin-bottom: 20px;
+
+}
+.custom-background-class{
+    border: 2px solid white;
+    backdrop-filter: blur(100px);
+    height: auto;
+    width: fit-content;
     padding: 15px;
     margin-bottom: 20px;
 
