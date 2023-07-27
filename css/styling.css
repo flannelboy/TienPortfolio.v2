@@ -34,11 +34,12 @@ body, html {
 
 
 /* Media query for mobile devices */
-@media (max-width: 900px) {
-    .video-background video {
+/* Target iOS devices */
+@media screen and (max-device-width: 768px) {
+    .video-background {
         display: none;
-
     }
+
     body{
         background-image: url("../media/mountain.jpg");
         background-size: cover;
