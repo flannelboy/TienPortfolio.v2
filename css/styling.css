@@ -34,7 +34,6 @@ body, html {
 
 
 /* Media query for mobile devices */
-/* Target iOS devices */
 @media screen and (max-device-width: 768px) {
     .video-background {
         display: none;
