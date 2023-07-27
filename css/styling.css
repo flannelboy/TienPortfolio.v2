@@ -34,9 +34,9 @@ body, html {
 
 
 /* Media query for mobile devices */
-@media (max-width: 767px) {
+@media (max-width: 900px) {
     .video-background video {
-        display: block;
+        display: none;
     }
     body{
         background-image: url("../media/mountain.jpg");
