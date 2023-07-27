@@ -19,10 +19,10 @@
 </head>
 <body>
 <div class="video-background">
-    <video id="videoBackground" autoplay muted loop>
+    <video id="videoBackground" muted loop>
         <source src="media/glassDNA.mp4" type="video/mp4">
         <!-- Provide fallback content if the browser doesn't support the video -->
-        <img src="media/mountain.jpg" alt="Fallback Image"> -->
+        <img src="media/mountain.jpg" alt="Fallback Image">
     </video>
 </div>
 <div class="container-fluid">
@@ -148,6 +148,20 @@
 <script>
     // noinspection JSUnresolvedReference
     AOS.init();
+
+    // Function to check if the user is on a mobile device
+    function isMobileDevice() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    // Autoplay the video on desktop, pause it on mobile
+    var videoBackground = document.getElementById("videoBackground");
+
+    if (isMobileDevice()) {
+        videoBackground.removeAttribute("autoplay"); // Remove the autoplay attribute on mobile
+    } else {
+        videoBackground.play(); // Autoplay the video on desktop
+    }
 </script>
 </body>
 </html>
