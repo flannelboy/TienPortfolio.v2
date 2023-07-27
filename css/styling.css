@@ -38,6 +38,13 @@ body, html {
     .video-background video {
         display: block;
     }
+    body{
+        background-image: url("../media/mountain.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
 }
 
 .navbar-toggler{
