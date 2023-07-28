@@ -25,9 +25,9 @@
         <img src="media/mountain.jpg" alt="Fallback Image">
     </video>
 </div>
-<div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-dark container ">
-        <a href="#" class="navbar-brand">
+<div class="container-fluid custom-footer" data-aos="fade-down">
+    <nav class="navbar navbar-expand-lg navbar-dark container" >
+        <a href="index.html" class="navbar-brand">
             <img src="media/logoBody.png" alt="Logo" style="height: 50px; width: 50px;">
         </a>
         <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
@@ -46,7 +46,7 @@
         <div class="collapse navbar-collapse" id="toggleMobileMenu">
             <ul class="navbar-nav ms-auto text-end">
                 <li>
-                    <a class="nav-link" href="#home">Start!</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li>
                     <a class="nav-link" href="#project">Projects</a>
@@ -57,17 +57,22 @@
                 <li>
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
+
             </ul>
         </div>
     </nav>
-    <div id="home" class="container text-center flex-column d-flex justify-content-center align-items-center" style="height: 100vh;">
+</div>
+<div class="container-fluid">
+    <div id="home" class="container-fluid text-center flex-column d-flex justify-content-center align-items-center" style="height: 100vh;">
         <h1 style="font-family: 'Yellowtail', cursive; font-size: 20vw;" data-aos="fade-up">Tien Le</h1>
-        <p class="display-5" data-aos="fade-up">Full Stack Developer & Computer Science student</p>
+        <p class="display-6" data-aos="fade-up">Full Stack Developer // Software Engineer // <a class="text-decoration-none text-light" href="academicProgression.html">Computer Science student</a></p>
         <div class="arrow-wrapper justify-content-center">
             <a href="#project" class="arrow text-light text-decoration-none display-6">&#8595;</a>
         </div>
     </div>
+    <div id="experience">
 
+    </div>
     <div id="project" class="container flex-md-column" style="height: auto; margin-top:50px;">
         <!-- Display this while project page still in-progress -->
         <!-- After finishing any work on projects, add d-none; in projects-container class -->
@@ -123,21 +128,24 @@
 <section data-aos="fade-up">
     <div id="feature" class="container-fluid custom-feature">
         <p class="display-4">As featured on:</p>
-        <a href="https://www.gmfinancial.com/en-us/company/newsroom/stem_practicum.html" target="_blank" class="text-light display-2 text-decoration-none">General Motor Financial</a><br><br>
-        <a href="https://www.aisd.net/district-news/college-night-gives-students-a-jump-on-their-higher-education-plans/" target="_blank" class="text-light display-2 text-decoration-none">Arlington Independent School District</a>
+        <a href="https://www.gmfinancial.com/en-us/company/newsroom/stem_practicum.html" target="_blank" class="text-light display-2 text-decoration-none custom-contact-link">General Motor Financial</a><br><br>
+        <a href="https://www.aisd.net/district-news/college-night-gives-students-a-jump-on-their-higher-education-plans/" target="_blank" class="text-light display-2 text-decoration-none custom-contact-link">Arlington Independent School District</a>
     </div>
     <div class="container-fluid custom-footer">
-
-        <div id="contact" class="container d-flex justify-content-between align-items-center custom-contact">
+        <div id="contact" class="container d-flex flex-wrap justify-content-between align-items-center custom-contact">
             <p class="display-1">Let's connect!</p>
             <ul class="list-unstyled">
-                <li class="d-inline-flex display-5">
-                    <a href="https://www.linkedin.com/in/tiendungdle/" class="text-decoration-none text-light"
+                <li class=" display-5">
+                    <a href="https://www.linkedin.com/in/tiendungdle/" class="text-decoration-none text-light custom-contact-link"
                        target="_blank">LinkedIn</a>
                 </li>
-                <li class="d-inline-flex display-5">
-                    <a href="https://github.com/flannelboy" class=" text-decoration-none text-light"
+                <li class=" display-5">
+                    <a href="https://github.com/flannelboy" class=" text-decoration-none text-light custom-contact-link"
                        target="_blank">GitHub</a>
+                </li>
+                <li class=" display-5">
+                    <a href="mailto:hello@tienl.dev" class=" text-decoration-none text-light custom-contact-link"
+                       target="_blank">hello@tienl.dev</a>
                 </li>
             </ul>
         </div>
