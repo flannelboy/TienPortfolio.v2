@@ -26,7 +26,7 @@
     </video>
 </div>
 <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top container" style="backdrop-filter: blur(5px); ">
+    <nav class="navbar navbar-expand-lg navbar-dark container ">
         <a href="#" class="navbar-brand">
             <img src="media/logoBody.png" alt="Logo" style="height: 50px; width: 50px;">
         </a>
@@ -46,7 +46,7 @@
         <div class="collapse navbar-collapse" id="toggleMobileMenu">
             <ul class="navbar-nav ms-auto text-end">
                 <li>
-                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#home">Start!</a>
                 </li>
                 <li>
                     <a class="nav-link" href="#project">Projects</a>
@@ -57,7 +57,6 @@
                 <li>
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
-
             </ul>
         </div>
     </nav>
@@ -121,30 +120,54 @@
 
 </div>
 
-<div class="container-fluid" style="backdrop-filter: blur(10px);">
-    <div id="contact" class="container d-flex justify-content-between align-items-center">
-        <p class="text-1">Let's connect!</p>
-        <ul class="list-unstyled">
-            <li class="d-inline-flex">
-                <a href="https://www.linkedin.com/in/tiendungdle/" class="text-decoration-none text-light"
-                   target="_blank">LinkedIn</a>
-            </li>
-            <li class="d-inline-flex ">
-                <a href="https://github.com/flannelboy" class=" text-decoration-none text-light"
-                   target="_blank">GitHub</a>
-            </li>
-        </ul>
+<section data-aos="fade-up">
+    <div id="feature" class="container-fluid custom-feature">
+        <p class="display-4">As featured on:</p>
+        <a href="https://www.gmfinancial.com/en-us/company/newsroom/stem_practicum.html" target="_blank" class="text-light display-2 text-decoration-none">General Motor Financial</a><br><br>
+        <a href="https://www.aisd.net/district-news/college-night-gives-students-a-jump-on-their-higher-education-plans/" target="_blank" class="text-light display-2 text-decoration-none">Arlington Independent School District</a>
     </div>
-    <footer class="text-center py-3">
-        <div>
-            <p>&copy; 2023 Tien Le. All rights reserved.</p>
+    <div class="container-fluid custom-footer">
+
+        <div id="contact" class="container d-flex justify-content-between align-items-center custom-contact">
+            <p class="display-1">Let's connect!</p>
+            <ul class="list-unstyled">
+                <li class="d-inline-flex display-5">
+                    <a href="https://www.linkedin.com/in/tiendungdle/" class="text-decoration-none text-light"
+                       target="_blank">LinkedIn</a>
+                </li>
+                <li class="d-inline-flex display-5">
+                    <a href="https://github.com/flannelboy" class=" text-decoration-none text-light"
+                       target="_blank">GitHub</a>
+                </li>
+            </ul>
         </div>
-    </footer>
-</div>
+        <footer class="text-center py-3">
+            <div>
+                <p>&copy; 2023 Tien Le. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</section>
+
 <script src="js/bootstrap.js"></script>
-<script src="js/js.js"></script>
 <!--suppress JSUnresolvedLibraryURL -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    // noinspection JSUnresolvedReference
+    AOS.init();
+    function isMobileDevice() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
 
+    // Autoplay the video on desktop, pause it on mobile
+    const videoBackground = document.getElementById("videoBackground");
+
+    if (isMobileDevice()) {
+        videoBackground.removeAttribute("autoplay"); // Remove the autoplay attribute on mobile
+    } else {
+        videoBackground.play(); // Autoplay the video on desktop
+    }
+
+</script>
 </body>
 </html>

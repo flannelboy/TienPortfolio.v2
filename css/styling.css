@@ -15,6 +15,8 @@ body, html {
     padding: 0;
     height: 100%;
 }
+
+
 .video-background {
     position: fixed;
     top: 0;
@@ -35,7 +37,7 @@ body, html {
 
 /* Media query for mobile devices */
 @media screen and (max-device-width: 768px) {
-    .video-backound {
+    .video-background {
         display: none;
     }
 
@@ -150,4 +152,29 @@ body, html {
     padding: 15px;
     margin-bottom: 20px;
 
+}
+.custom-feature{
+    background-color: cornflowerblue;
+    padding: 5%;
+    height: fit-content;
+}
+.custom-footer{
+    background-color: #121212;
+}
+.custom-contact{
+    padding-top: 5%;
+}
+
+a.text-decoration-none::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    transition: width 0.3s ease-in-out; /* Set the transition for the width property */
+}
+
+/* On hover, make the underline fade up */
+a.text-decoration-none:hover::after {
+    width: 100%;
 }
