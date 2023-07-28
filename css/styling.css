@@ -35,7 +35,7 @@ body, html {
 
 /* Media query for mobile devices */
 @media screen and (max-device-width: 768px) {
-    .video-background {
+    .video-backound {
         display: none;
     }
 
