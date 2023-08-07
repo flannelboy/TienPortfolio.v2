@@ -142,9 +142,13 @@ body, html {
     height: auto;
     width: fit-content;
     padding: 15px;
-    margin-bottom: 20px;
+    margin: 10px;
 
 }
+.custom-background:hover{
+
+}
+
 .custom-background-class{
     border: 2px solid white;
     backdrop-filter: blur(100px);
