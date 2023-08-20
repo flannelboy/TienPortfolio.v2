@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="media/logoBody.png" type="image/png">
-    <title>Tien Le Academic Progression</title>
+    <title>Teaching</title>
     <!--<link rel="icon" href="path/to/favicon.ico" type="image/x-icon"> Fonts -->
     <meta name="author" content="Tien Dung Le">
     <!-- Fonts -->
@@ -52,7 +52,10 @@
                     <a class="nav-link" href="index.html#project">Projects</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#home">Academic Progression</a>
+                    <a class="nav-link" href="academic.html">Academic</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="teaching.html">Teaching</a>
                 </li>
                 <li>
                     <a class="nav-link" href="#contact">Contact</a>
@@ -137,25 +140,25 @@
         </footer>
     </div>
 </section>
-    <script src="js/bootstrap.js"></script>
-    <!--suppress JSUnresolvedLibraryURL -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        // noinspection JSUnresolvedReference
-        AOS.init();
-        function isMobileDevice() {
-            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        }
+<script src="js/bootstrap.js"></script>
+<!--suppress JSUnresolvedLibraryURL -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    // noinspection JSUnresolvedReference
+    AOS.init();
+    function isMobileDevice() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
 
-        // Autoplay the video on desktop, pause it on mobile
-        const videoBackground = document.getElementById("videoBackground");
+    // Autoplay the video on desktop, pause it on mobile
+    const videoBackground = document.getElementById("videoBackground");
 
-        if (isMobileDevice()) {
-            videoBackground.removeAttribute("autoplay"); // Remove the autoplay attribute on mobile
-        } else {
-            videoBackground.play(); // Autoplay the video on desktop
-        }
+    if (isMobileDevice()) {
+        videoBackground.removeAttribute("autoplay"); // Remove the autoplay attribute on mobile
+    } else {
+        videoBackground.play(); // Autoplay the video on desktop
+    }
 
-    </script>
+</script>
 </body>
 </html>

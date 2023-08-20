@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="media/logoBody.png" type="image/png">
+    <title>Academic</title>
+    <!--<link rel="icon" href="path/to/favicon.ico" type="image/x-icon"> Fonts -->
+    <meta name="author" content="Tien Dung Le">
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Chivo Mono">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Yellowtail">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styling.css">
+    <!--suppress JSUnresolvedLibraryURL -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+</head>
+<body>
+<div class="video-background">
+    <video id="videoBackground" muted loop>
+        <source src="media/glassDNA.mp4" type="video/mp4">
+        <!-- Provide fallback content if the browser doesn't support the video -->
+        <img src="media/mountain.jpg" alt="Fallback Image">
+    </video>
+</div>
+<div class="container-fluid custom-footer" data-aos="fade-down">
+    <nav class="navbar navbar-expand-lg navbar-dark container" >
+        <a href="index.html" class="navbar-brand">
+            <img src="media/logoBody.png" alt="Logo" style="height: 50px; width: 50px;">
+        </a>
+        <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#toggleMobileMenu"
+                aria-controls="toggleMobileMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+
+        </button>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav ms-auto text-end">
+                <li>
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="index.html#project">Projects</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#home">Academic</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="teaching.html">Teaching</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="container-fluid">
+
+    <div id="home" class="container text-center flex-column d-flex justify-content-center align-items-center"
+         style="height: 100vh;">
+        <p class="display-5" data-aos="fade-up">Bachelor of Science in Computer Science</p>
+        <p class="display-6" data-aos="fade-up">University of Texas at Arlington.</p>
+        <p class="display-7 " data-aos="fade-up">Maverick Academic Scholarship, Alex Daniel Goolsby Scholarship</p>
+        <p class="display-7 " data-aos="fade-up">Classification: Sophomore | Cumulative GPA: 3.531</p>
+        <p class="display-7 " data-aos="fade-up"></p>
+
+        <div class="arrow-wrapper justify-content-center">
+            <a href="#classes" class="arrow text-light text-decoration-none display-6">&#8595;</a>
+        </div>
+    </div>
+
+    <div id="classes" class="container flex-md-wrap" style="height: auto; margin-top:50px;">
+        <!-- Display this while project page still in-progress -->
+        <!-- After finishing any work on projects, add d-none; in projects-container class -->
+        <div class="container-fluid text-center display-5" data-aos="fade-up">
+            <p>Relevant Coursework</p>
+        </div>
+        <div id="professional" class="d-flex flex-wrap">
+
+            <div class="container-fluid text-start custom-background-class" data-aos="fade-up">
+                <p>Introduction to Computers & Programming</p>
+                <p>Grade: A</p>
+            </div>
+            <div class="container-fluid text-start custom-background-class" data-aos="fade-up">
+                <p>Intermediate Programming</p>
+                <p>Grade: A</p>
+            </div>
+            <div class="container-fluid text-start custom-background-class" data-aos="fade-up">
+                <p>Object-Oriented Programming</p>
+                <p>Grade: In Progress</p>
+            </div>
+            <div class="container-fluid text-start custom-background-class" data-aos="fade-up">
+                <p>Discrete Structures</p>
+                <p>Grade: B</p>
+            </div>
+
+            <div class="container-fluid text-start custom-background-class" data-aos="fade-up">
+                <p>Introduction to Computer Science & Engineering</p>
+                <p>Grade: A</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<section data-aos="fade-up">
+    <div class="container-fluid custom-footer">
+        <div id="contact" class="container d-flex flex-wrap justify-content-between align-items-center custom-contact">
+            <p class="display-1">Let's connect!</p>
+            <ul class="list-unstyled">
+                <li class=" display-5">
+                    <a href="https://www.linkedin.com/in/tiendungdle/" class="text-decoration-none text-light custom-contact-link"
+                       target="_blank">LinkedIn</a>
+                </li>
+                <li class=" display-5">
+                    <a href="https://github.com/flannelboy" class=" text-decoration-none text-light custom-contact-link"
+                       target="_blank">GitHub</a>
+                </li>
+                <li class=" display-5">
+                    <a href="mailto:hello@tienl.dev" class=" text-decoration-none text-light custom-contact-link"
+                       target="_blank">hello@tienl.dev</a>
+                </li>
+            </ul>
+        </div>
+        <footer class="text-center py-3">
+            <div>
+                <p>&copy; 2023 Tien Le. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</section>
+    <script src="js/bootstrap.js"></script>
+    <!--suppress JSUnresolvedLibraryURL -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // noinspection JSUnresolvedReference
+        AOS.init();
+        function isMobileDevice() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+
+        // Autoplay the video on desktop, pause it on mobile
+        const videoBackground = document.getElementById("videoBackground");
+
+        if (isMobileDevice()) {
+            videoBackground.removeAttribute("autoplay"); // Remove the autoplay attribute on mobile
+        } else {
+            videoBackground.play(); // Autoplay the video on desktop
+        }
+
+    </script>
+</body>
+</html>
