@@ -223,19 +223,7 @@
 <script>
     AOS.init();
 
-    $(document).ready(function() {
-        // Function to handle the fixed background effect
-        function updateBackground() {
-            var scrolled = $(window).scrollTop();
-            $('body').css('background-position', 'center ' + -(scrolled * 0.5) + 'px');
-        }
 
-        // Attach the function to the scroll event
-        $(window).scroll(updateBackground);
-
-        // Call the function initially to set the initial background position
-        updateBackground();
-    });
 </script>
 
 </body>
