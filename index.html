@@ -221,22 +221,22 @@
 <script src="js/bootstrap.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-    // noinspection JSUnresolvedReference
     AOS.init();
 
-    function isMobileDevice() {
-        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    }
+    $(document).ready(function() {
+        // Function to handle the fixed background effect
+        function updateBackground() {
+            var scrolled = $(window).scrollTop();
+            $('body').css('background-position', 'center ' + -(scrolled * 0.5) + 'px');
+        }
 
-    // Autoplay the video on desktop, pause it on mobile
-    const videoBackground = document.getElementById("videoBackground");
+        // Attach the function to the scroll event
+        $(window).scroll(updateBackground);
 
-    if (isMobileDevice()) {
-        videoBackground.removeAttribute("autoplay"); // Remove the autoplay attribute on mobile
-    } else {
-        videoBackground.play(); // Autoplay the video on desktop
-    }
-
+        // Call the function initially to set the initial background position
+        updateBackground();
+    });
 </script>
+
 </body>
 </html>
